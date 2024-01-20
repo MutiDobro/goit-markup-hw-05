@@ -597,6 +597,9 @@ img {
   margin-bottom: 4px;
 }
 .modal_div {
+  margin-bottom: 8px;
+}
+.modal_div_comment {
   margin-bottom: 16px;
 }
 .modal_icon {
