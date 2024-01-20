@@ -6,6 +6,7 @@
   --black-color: #2e2f42;
   --ourteam-back-color: #f4f4fd;
   --gray-text-color: #f4f4fd;
+  --dark-gray-color: #8e8f99;
 }
 /* Link Options */
 a {
@@ -213,7 +214,7 @@ img {
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--dark-gray-color);
   background-color: var(--gray-text-color);
 }
 .icon_img {
@@ -450,6 +451,55 @@ img {
 .icon_social_foot {
   fill: var(--gray-text-color);
 }
+.subscribe_conteiner {
+  padding-left: 80px;
+}
+.subscribe_conteiner_p {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.subscribe_conteiner_form {
+  display: flex;
+  gap: 24px;
+}
+.subscribe_conteiner_input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  background: transparent;
+  color: var(--white-color);
+}
+.subscribe_conteiner_input::placeholder {
+  color: var(--white-color);
+}
+.subscribe_conteiner_btn {
+  border: none;
+  display: inline-flex;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon_subscribe {
+  margin-left: 16px;
+  fill: var(--white-color);
+}
 /* Modal window */
 .backdrop {
   position: fixed;
@@ -479,6 +529,8 @@ img {
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal_close_btn:hover,
 .modal_close_btn:focus {
@@ -487,6 +539,8 @@ img {
 }
 .modal_close_btn:hover > .model_close_icon,
 .modal_close_btn:focus > .model_close_icon {
+  background-color: var(--hover-color);
+  border: none;
   fill: var(--white-color);
 }
 .modal_close_btn {
@@ -537,13 +591,13 @@ img {
 .modal_label {
   display: block;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--dark-gray-color);
   margin-bottom: 4px;
 }
 .modal_div {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .modal_icon {
   position: absolute;
@@ -564,8 +618,9 @@ img {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -578,9 +633,11 @@ img {
 }
 .label_checkbox {
   font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
+  color: var(--dark-gray-color);
 }
 .label_checkbox a {
   font-size: 12px;
@@ -589,6 +646,7 @@ img {
   color: var(--blue-color);
 }
 .label_checkbox span {
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -626,51 +684,4 @@ img {
   color: var(--white-color);
   background-color: var(--blue-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe_conteiner {
-  padding-left: 80px;
-}
-.subscribe_conteiner_p {
-  margin-bottom: 16px;
-  font-weight: 500;
-  color: var(--white-color);
-}
-.subscribe_conteiner_form {
-  display: flex;
-  gap: 24px;
-}
-.subscribe_conteiner_input {
-  width: 264px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background: transparent;
-}
-.subscribe_conteiner_input::placeholder {
-  color: var(--white-color);
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-}
-.subscribe_conteiner_btn {
-  border: none;
-  display: inline-flex;
-  min-width: 165px;
-  height: 40px;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--white-color);
-  background-color: var(--blue-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon_subscribe {
-  fill: var(--white-color);
 }
